@@ -2,7 +2,6 @@ var a = 10;// Global SCOPE
 
 // var is function scoped
 
-
 console.log(a);
 
 function printHello() {
