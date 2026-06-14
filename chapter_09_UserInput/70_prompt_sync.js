@@ -1,9 +1,9 @@
-// const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
-// let num = Number(prompt("Enter a number: "));
+let num = Number(prompt("Enter a number: "));
 
-// if (num % 2 === 0) {
-//     console.log(num + " is Even");
-// } else {
-//     console.log(num + " is Odd");
-// }
+if (num % 2 === 0) {
+    console.log(num + " is Even");
+} else {
+    console.log(num + " is Odd");
+}

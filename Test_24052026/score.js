@@ -1,18 +1,19 @@
 function classifyJsBasicsScore(score) {
-   if(score>=90 && score<100){ 
-    return ("EXCELLENT");
+   if(score>89 && score<=100){ 
+    console.log("EXCELLENT");
   }
     
-  if (score>=75 && score<=89) {
-    return (" GOOD");
+  if (score>74 && score<90) {
+   console.log(" GOOD");
   }
 
-  if (score>=50 && score<=74) {
-    return ("NEEDS_PRACTICE");
+  if (score>50 && score<75) {
+    console.log("NEEDS_PRACTICE");
   }
 
-  if (score<50) {
-    return ("REVISIT");
+  if (score<51) {
+    console.log("REVISIT");
   }
+  return;
 }
-classifyJsBasicsScore(95);
+classifyJsBasicsScore(97);

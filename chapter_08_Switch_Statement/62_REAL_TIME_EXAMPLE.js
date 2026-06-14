@@ -1,7 +1,6 @@
 // You are working API Validation
 // response Code - 200, 404, 401, 403.....404
 
-
 let responseCode = 404;
 
 switch (responseCode) {
