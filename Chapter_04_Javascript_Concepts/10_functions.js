@@ -11,3 +11,8 @@ greet();
 greet();
 greet();
 greet();
+
+for(i=1;i<=5;i++){
+    console.log(i);
+    greet();
+}

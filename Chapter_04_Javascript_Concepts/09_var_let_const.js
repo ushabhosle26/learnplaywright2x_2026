@@ -16,8 +16,6 @@ for (var i = 0; i < testCases.length; i++) {
 
 console.log("Loop counter leaked outside:", i);
 
-
-
 console.log("Hi");
 console.log("Hi");
 console.log("Hi");
@@ -26,6 +24,20 @@ function say() {
     console.log("Hi from Function");
 }
 
+say();
 
-say();
-say();
+for(let i=1;i<=3;i++)
+{
+    console.log(i);
+    say();
+}
+
+
+function printName(){
+    console.log("Usha")
+}
+//printName();
+for(i=1;i<=5;i++){
+    console.log(i);
+    printName();
+}

@@ -14,22 +14,21 @@ console.log("Retry attempt:", retryCount);
 
 let testStatus = "pending";
 
-if (testStatus === "pending") {
-    let executionTime = 1200;
+if (testStatus == "pending") {
+    let executionTime = 1200;//local variable scope within this block only
     console.log("Inside block:", executionTime);   // 1200
 }
-
+ let executionTime = 1300;
 console.log(executionTime); // ReferenceError: executionTime is not defined
 
 // {} - Block 
 // if(){} 
-// funcion name(){}
+// function name(){}
 
 
 // let = loyal
 // var = varirable / triator
 
-
-
 let name = "pending";
 name = "done";
+console.log(name);

@@ -5,13 +5,13 @@ function printHello() {
     console.log("Hello TheTestingAcademy!");
     var a = 20; // Local Scope
     console.log(a);
-    if (true) {
+    if (true){
         var a = 30;
         console.log(a); // 30
     }
-    console.log("F ->", a);
+    console.log("F ->", a);//30
 }
-
-console.log("G ->", a);
-
 printHello();
+console.log("G ->", a);//10
+
+//printHello();
