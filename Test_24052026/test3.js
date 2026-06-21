@@ -1,6 +1,6 @@
-function normalizeJsOperatorsLabel(input) {
-  if (typeof input !== 'string') return '';
-  const normalized = input
+function normalizeJsOperatorsLabel(label) {
+if (typeof label !== 'string') return '';
+  const normalized = label
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
@@ -8,12 +8,6 @@ function normalizeJsOperatorsLabel(input) {
 
   return normalized ? `js-operator-${normalized}` : 'js-operator';
 }
-console.log(normalizeJsOperatorsLabel(" Strict Equality ")); 
-// Output: "js-operator-strict-equality"
-
-console.log(normalizeJsOperatorsLabel("  Nullish   coalescing ?? ")); 
-// Output: "js-operator-nullish-coalescing"
-
 console.log(normalizeJsOperatorsLabel(" Login Button "));
 console.log(normalizeJsOperatorsLabel("User Profile: Edit!"));
 console.log(normalizeJsOperatorsLabel("---Search@@Box---"));
