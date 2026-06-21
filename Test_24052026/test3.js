@@ -8,8 +8,6 @@ function normalizeJsOperatorsLabel(input) {
 
   return normalized ? `js-operator-${normalized}` : 'js-operator';
 }
-
-// --- Examples ---
 console.log(normalizeJsOperatorsLabel(" Strict Equality ")); 
 // Output: "js-operator-strict-equality"
 
