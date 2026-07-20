@@ -3,6 +3,7 @@ function greetByName(name) {
 }
 
 greetByName("Pramod");
+
 let result = greetByName("Amit");
 console.log(result);
 
